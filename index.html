@@ -13,7 +13,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vaccine Availability Checker</title>
-  <link rel="shortcut icon" href="screenshot/logo2.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="screenshot/SakhiLogoSquareTransparent.png" type="image/x-icon" />
+  <!-- <style>
+    .my-container {
+        border: 1px solid green;
+    }
+
+    .my-row {
+        border: 3px solid red;
+        width:inherit;
+    }
+
+    .my-col {
+        border: 3px dotted blue;
+    }
+</style> -->
 </head>
 
 <body>
@@ -34,11 +48,11 @@
                 <span>100</span>
               </div>
               <div class="field">
-                <div class="value left">10 KM</div>
+                <div class="value_left">10 KM</div>
                 <input type="range" min="10" max="200" value="10" steps="1" id="sliderBar"
                   onchange="StaticData.getCentersByPincode(value)" />
 
-                <div class="value right">200 KM</div>
+                <div class="value_right">100 KM</div>
               </div>
             </div>
             <div class="btn_parent">
@@ -61,21 +75,14 @@
           </div>
         </div>
       </div>
-      <div class="row my-row" style="height: 60vh;">
-        <div class="col-md-10 col-sm-10 my-col">
+      <div class="row" style="justify-content: center;">
+        <div class=".col-md-3 .col-md-6 .col-md-3">
 
           <div class="tblContent" id="viewCenters"></div>
           <div class="tblContent" id="viewCentersInMobile">Hello</div>
 
         </div>
       </div>
-
-      <!-- <div class="row my-row">
-        <div class="col-md-12 col-sm-12 my-col">
-          About US
-          - name / linkedin / picture
-        </div>
-      </div> -->
     </div>
   </div>
 
@@ -95,7 +102,7 @@
     inputSlider.oninput = (() => {
       let value = inputSlider.value;
       slideValue.textContent = value;
-      slideValue.style.left = (value / 2) + "%";
+      slideValue.style.left = (value/2) + "%";
       slideValue.classList.add("show");
     });
     inputSlider.onblur = (() => {
@@ -104,9 +111,9 @@
 
     inputSlider.addEventListener("input", function () {
       var x = inputSlider.value;
-      x = x / 2;
+      x = x/2;
       color = 'linear-gradient(to right, #5f367e ' + x + '%, white ' + x + '%)';
-      // color = "linear-gradient(90deg, pink 50%, cyan 50%)";
+
       $("#sliderBar").css("background", color);
     })
 

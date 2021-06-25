@@ -33,7 +33,6 @@
     color: white; 
     padding: 1.5% 3.886%;
     cursor: pointer;
-    /* float: left;  */
     border-radius: 25px;
     font-weight: 500;
 }
@@ -41,7 +40,7 @@
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1258px) {
 
     .btn-group button{
         padding: 1% 2.339%;
