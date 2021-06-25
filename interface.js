@@ -149,6 +149,7 @@ Interface.repaint =
         $("#all").css("background-color", "#5f367e");
         var text = Mustache.render(Interface.template, StaticData);
         $("#viewCenters").html(text);
-        // console.log("Repaint");
+        var textForMobile = Mustache.render(Interface.templateMobile, Interface.filtereddata); //check for error
+        $("#viewCentersInMobile").html(textForMobile);
     };
 
