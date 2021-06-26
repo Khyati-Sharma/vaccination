@@ -9,14 +9,19 @@ body {
 }
 
 #title{
-    display: flex;
+    display: grid;
 }
 
-.head_text {
+.head_text1{
+  color: white;
+  font-size: x-large;
+}
+
+.head_text2 {
   margin: 2% 0% 2% 2%;
   font-style: normal;
   color: white;
-  font-size: 300%;
+  font-size: xx-large;
   font-family: system-ui;
   font-weight: 500;
 }
@@ -25,6 +30,7 @@ body {
   margin-top: 0.5%;
   width: 4.5%;
   margin-left: 1%;
+  position: absolute;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
